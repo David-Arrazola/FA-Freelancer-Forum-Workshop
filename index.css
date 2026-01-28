@@ -1,0 +1,48 @@
+#app {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+table {
+  border: solid;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+p {
+  justify-self: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h2 {
+  justify-self: center;
+  font-weight: lighter;
+}
+
+tr {
+  border-style: dashed;
+  text-align: left;
+}
+
+th {
+  border-style: dashed;
+  padding-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  width: calc(100% / 3);
+  font-weight: lighter;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.certainTh {
+  width: 15%;
+}
+
+.hardCodeTh {
+  font-size: x-large;
+  font-weight: bold;
+}

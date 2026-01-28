@@ -47,9 +47,9 @@ const averageFreelanceRate = getAverageRate(workers);
 function FreelancerRow(currFreelancer) {
   const $tr = document.createElement("tr");
   $tr.innerHTML = `
-        <th>${currFreelancer.name}</th>
+        <th class="certainTh">${currFreelancer.name}</th>
         <th>${currFreelancer.occupation}</th>
-        <th>${currFreelancer.rate}</th>
+        <th class="certainTh">${currFreelancer.rate}</th>
     `;
   return $tr;
 }
@@ -65,7 +65,15 @@ function FreelancerTable(freelanceObjArray) {
 function render() {
   const $app = document.querySelector("#app");
   $app.innerHTML = `
-    <h1>Freelancer Forum</h1>
+    <p>Freelancer Forum<p>
+    <h2>The average rate is ${averageFreelanceRate}.</h2>
+    <table>
+      <tr>
+        <th class="certainTh hardCodeTh">NAME</th>
+        <th class="hardCodeTh">OCCUPATION</th>
+        <th class="certainTh hardCodeTh">RATE</th>
+      </tr>
+    </table>
     <FreelancerTable></FreelancerTable>
   `;
   $app.querySelector("FreelancerTable").replaceWith(FreelancerTable(workers));
