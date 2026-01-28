@@ -49,7 +49,7 @@ function FreelancerRow(currFreelancer) {
   $tr.innerHTML = `
         <th class="certainTh">${currFreelancer.name}</th>
         <th>${currFreelancer.occupation}</th>
-        <th class="certainTh">${currFreelancer.rate}</th>
+        <th class="certainTh">$${currFreelancer.rate}</th>
     `;
   return $tr;
 }
@@ -66,7 +66,7 @@ function render() {
   const $app = document.querySelector("#app");
   $app.innerHTML = `
     <p>Freelancer Forum<p>
-    <h2>The average rate is ${averageFreelanceRate}.</h2>
+    <h2>The average rate is <b>$${averageFreelanceRate}</b>.</h2>
     <table>
       <tr>
         <th class="certainTh hardCodeTh">NAME</th>

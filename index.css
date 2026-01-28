@@ -15,6 +15,10 @@ p {
   font-weight: bold;
 }
 
+h2 > b {
+  font-weight: bold;
+}
+
 h2 {
   justify-self: center;
   font-weight: lighter;
